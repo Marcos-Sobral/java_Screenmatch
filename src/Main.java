@@ -5,9 +5,12 @@ public class Main {
         Filme meuFIlme = new Filme();
         //Tipo da variavel  || Guardando dentro de um espaço da memoria
 
-        meuFIlme.nome = "Minecraft";
-        meuFIlme.anoLancamento = 2025;
-        System.out.println("Hello, World!"+ meuFIlme.nome);
+        meuFIlme.setNome("Minecraft");
+        meuFIlme.setAnoLancamento(2025);
+        meuFIlme.setCategoria("Aventura");
+        meuFIlme.setDuracaoEmMinutos(180);
+        meuFIlme.setIncluidoNoPlano(true);
+        System.out.println("Nome do filme:"+ meuFIlme.getNome());
         meuFIlme.exibeFichaTecnica();
 
         meuFIlme.avalia(5);
